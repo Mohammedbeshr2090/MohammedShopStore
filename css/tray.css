@@ -1,0 +1,17 @@
+/* .contener{
+    overflow-y:auto;
+    display: inline-flex;
+    height: 300px;
+    width: 300px;
+}
+.contener img{
+    width: 200px;
+    height: 250px;
+} */
+
+.left{
+    float: left;
+}
+aside{
+    float: right;
+}

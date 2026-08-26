@@ -1,0 +1,324 @@
+.header {
+  position: sticky;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000; 
+ background: #55026af1;
+  padding: 1rem 9%;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .header .links{
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+}
+.header .links .ico{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .ico span{
+    background-color: black;
+    margin-bottom: 5px;
+    height: 5px;
+}
+.header .links .ico span:first-child{
+    width: 100%;
+}
+.header .links .ico span:nth-child(2){
+    width: 100%;
+}
+.header .links .ico span:last-child{
+    width: 100%;
+}
+.header .links ul{
+list-style: none;
+
+padding: 0px;
+background-color: #f6f6f6;
+position: absolute;
+right: 0px;
+min-width: 300px;
+top: 28px;
+display: none;
+}
+.header .links ul li{
+  
+  margin: 15px;
+  
+}
+/* تنسيقات المثلث الي تضهر اسفل المنيو */
+.header .links ul::before{
+content: "";
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent #f6f6f6 transparent;
+position:absolute;
+top: -21px;
+right: 0px;
+
+
+}
+.header .links ul li a{
+  font-size: 40px;
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul li a:hover{
+    padding-left: 60px;
+}
+  
+.header .logo {
+  padding-right: 0px;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.header .search-form {
+  border-radius: 5rem;
+  height: 5rem;
+  width: 50rem;
+  padding: 0 2rem;
+  display: flex;
+  
+          align-items: center;
+  background: #fff;
+}
+
+.header .search-form input {
+  width: 100%;
+  padding-right: 1rem;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: #666;
+  border: 0px;
+    text-align: right;
+}
+
+.header .search-form label {
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.header .search-form label:hover {
+  color: #e30943f1;
+}
+/* #search-btn {
+  display: none;
+} */
+
+  /* .navbar a {
+    display:inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    transform: scale(1.1);
+    color: #47b6e2;
+  } */
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    color: #333;
+  }
+  
+  .heading span {
+    color: #55026af1;
+  }
+.category .box-container {
+   display: flex; 
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+    text-decoration: none;
+    
+    gap: 2rem;
+  }
+  
+  .category .box-container a{
+    text-decoration: none;
+  }
+
+  .category .box-container .box {
+    text-align: center;
+    border-radius: .5rem;
+    border: 0.2rem solid #333;
+    padding: 2rem;
+    background: #fff;
+   
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .category .box-container .box:hover {
+    background: #333;
+  }
+  
+  .category .box-container .box:hover h3 {
+    color: #fff;
+  }
+  
+  .category .box-container .box img {
+    height: 8rem;
+    margin-bottom: .5rem;
+  }
+  
+  .category .box-container .box h3 {
+    font-size: 1.7rem;
+    
+    color: #333;
+  }
+  
+  .products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 30px;
+   
+  }
+  
+  .products .box-container .box {
+    border: 0.2rem solid #333;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box:hover .image .hover-img {
+    display: inline-block;
+  }
+  
+  .products .box-container .box:hover .image .main-img {
+    display: none;
+  }
+  
+.products .box-container .box .image {
+    position: relative;
+  }
+  
+  .products .box-container .box .image img {
+    height: 30rem;
+    
+    animation: fadeIn .2s linear;
+  }
+  
+  .products .box-container .box .image .hover-img {
+    display: none;
+  }
+  .products .box-container .box .content {
+    padding: 2rem;
+  }
+  
+  .products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .products .box-container .box .content .price {
+    font-size: 2.2rem;
+    color: #55026af1;
+    padding-bottom: .7rem;
+    padding-top: .5rem;
+  }
+  
+  .products .box-container .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+
+
+ 
+  
+  .product-banner .box-container .box {
+    
+    position: relative;
+    display: inline-flex;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    border: 0.2rem solid #333;
+    overflow: hidden;
+    height: 30rem;
+    margin: 10px;
+  }
+  
+  .product-banner .box-container .box:hover img {
+  
+            transform: scale(1.1);
+  }
+  
+  .product-banner .box-container .box img {
+    height: 100%;
+    width: 100%;
+   
+  }
+  
+  .product-banner .box-container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+   
+  }
+  
+  .product-banner .box-container .box .content span {
+    font-size: 1.7rem;
+    color: #55026af1;
+  }
+  
+  .product-banner .box-container .box .content h3 {
+    padding-top: .5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+
+
+  .quick-links {
+   
+     display: flex;
+  
+  
+     
+    background: #333;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     
+  }
+  
+  .quick-links .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  .quick-links a {
+    margin:10px;
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .quick-links a:hover {
+    color: gold;
+  }
+  

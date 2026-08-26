@@ -1,0 +1,256 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    
+    transition: all .2s linear;
+  }
+  .header {
+   
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #55026af1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+  }
+  
+  .header .links{
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+  }
+  .header .links .ico{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header .links .ico span{
+    background-color: black;
+    margin-bottom: 5px;
+    height: 5px;
+  }
+  .header .links .ico span:first-child{
+    width: 100%;
+  }
+  .header .links .ico span:nth-child(2){
+    width: 100%;
+  }
+  .header .links .ico span:last-child{
+    width: 100%;
+  }
+  .header .links ul{
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0px;
+  min-width: 300px;
+  display: none;
+  }
+  .header .links ul li{
+  
+  margin: 15px;
+  
+  }
+  /* تنسيقات المثلث الي تضهر اسفل المنيو */
+  .header .links ul::before{
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position:absolute;
+  top: -20px;
+  right: 0px;
+  
+  
+  }
+  .header .links ul li a{
+  font-size: 40px;
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  .header .links:hover ul{
+    display: block;
+  }
+  .header .links ul li a:hover{
+    padding-left: 60px;
+  }
+  .header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .header .logo i {
+    color: gold;
+  }
+  
+  .header .search-form {
+    border-radius: 5rem;
+    height: 5rem;
+    width: 50rem;
+    padding: 0 2rem;
+   
+    display: flex;
+    
+            align-items: center;
+    background: #fff;
+  }
+  
+  .header .search-form input {
+    width: 100%;
+    padding-right: 1rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: #666;
+  }
+  
+  .header .search-form label {
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .header .search-form label:hover {
+    color: #55026af1;
+  }
+  
+  .about {
+   
+    display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+  }
+  
+  .about .image {
+   padding: 2rem;
+    flex: 1 1 42rem;
+  }
+  
+  .about .image img {
+    width: 100%;
+  }
+  
+  .about .content {
+   flex: 1 1 42rem;
+    padding: 3rem;
+    background: #fff;
+  }
+  
+  .about .content h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .about .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    background: #55026af1;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    color: #333;
+  }
+  
+  .heading span {
+    color: #55026af1;
+  }
+  .review .slide {
+    width: 35rem;
+    padding: 3rem;
+    margin: 3rem;
+    text-align: center;
+    border: 0.2rem solid #333;
+   
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    background: #fff;
+  }
+  
+  .review .slide img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  
+  .review .slide h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .review .slide span {
+    color: #55026af1;
+    font-size: 1.7rem;
+  }
+  
+  .review .slide p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    padding-top: 1rem;
+  }
+  .quick-links {
+  
+ 
+    display: flex;
+   
+            align-items: center;
+    gap: 2rem;
+    background: #333;
+    
+            justify-content: space-between;
+            padding: 1rem 
+
+  }
+  
+  .quick-links .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .quick-links .logo i {
+    color: gold;
+  }
+  
+  .quick-links .links a {
+   
+    margin:  1rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+  
+  .quick-links .links a:hover {
+    color: gold;
+  }
+  

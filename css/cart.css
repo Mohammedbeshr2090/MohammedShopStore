@@ -1,0 +1,294 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    
+    transition: all .2s linear;
+  }
+  .header {
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #55026af1;
+   
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    padding: 1rem 9%;
+  }
+  
+  .header .links{
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+  }
+  .header .links .ico{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header .links .ico span{
+    background-color: black;
+    margin-bottom: 5px;
+    height: 5px;
+  }
+  .header .links .ico span:first-child{
+    width: 100%;
+  }
+  .header .links .ico span:nth-child(2){
+    width: 100%;
+  }
+  .header .links .ico span:last-child{
+    width: 100%;
+  }
+  .header .links ul{
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0px;
+  min-width: 300px;
+  /* top: 28px; */
+  display: none;
+  }
+  .header .links ul li{
+  
+  margin: 15px;
+  
+  }
+  /* تنسيقات المثلث الي تضهر اسفل المنيو */
+  .header .links ul::before{
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position:absolute;
+  top: -20px;
+  right: 0px;
+  
+  
+  }
+  .header .links ul li a{
+  font-size: 40px;
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  .header .links:hover ul{
+    display: block;
+  }
+  .header .links ul li a:hover{
+    padding-left: 60px;
+  }
+  .header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .header .logo i {
+    color: gold;
+  }
+  
+  .header .search-form {
+    border-radius: 5rem;
+    height: 5rem;
+    width: 50rem;
+    padding: 0 2rem;
+   
+    display: flex;
+    align-items: center;
+    background: #fff;
+  }
+  
+  .header .search-form input {
+    width: 100%;
+    padding-right: 1rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: #666;
+  }
+  
+  .header .search-form label {
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .header .search-form label:hover {
+    color: #e30943f1;
+  }
+  
+  .shopping-cart .box-container {
+    
+    display: grid;
+   
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+    margin: 4rem;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    color: #333;
+  }
+  
+  .heading span {
+    color: #55026af1;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    background: #55026af1;
+  }
+  .shopping-cart .box-container .box {
+    padding: 2rem;
+    border: 0.2rem solid #333;
+    background: #fff;
+    border-radius: .5rem;
+   
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+   
+    display: flex;
+    
+            align-items: center;
+    gap: .5rem;
+    position: relative;
+  }
+  
+  .shopping-cart .box-container .box .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .shopping-cart .box-container .box .fa-times:hover {
+    color: #333;
+  }
+  
+  .shopping-cart .box-container .box img {
+    height: 12rem;
+  }
+  
+  .shopping-cart .box-container .box .content h3 {
+    font-size: 1.7rem;
+    color: #333;
+  }
+  
+  .shopping-cart .box-container .box .content form {
+    padding: 1rem 0;
+   
+    display: flex;
+    gap: .5rem;
+    
+            align-items: center;
+  }
+  
+  .shopping-cart .box-container .box .content form span {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .shopping-cart .box-container .box .content form input {
+    width: 7rem;
+    padding: .5rem 1rem;
+    color: #666;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.5rem;
+  }
+  
+  .shopping-cart .box-container .box .content .price {
+    font-size: 2rem;
+    color: #55026af1;
+  }
+  
+  .shopping-cart .box-container .box .content .price span {
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration: line-through;
+  }
+  
+  .shopping-cart .cart-total {
+    margin-top: 2rem;
+   
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: 0.2rem solid #333;
+    border-radius: .5rem;
+    background: #fff;
+    padding: 2rem;
+    padding-top: 1rem;
+    margin: 3rem;
+  }
+  
+  .shopping-cart .cart-total h3 {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .shopping-cart .cart-total h3 span {
+    color: #55026af1;
+  }
+  .quick-links {
+    
+    display: flex;
+    
+            align-items: center;
+           
+    gap: 2rem;
+    background: #333;
+    
+           
+            padding: 1rem 0
+            
+  
+  }
+  
+  .quick-links .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .quick-links .logo i {
+    color: gold;
+  }
+  
+  .quick-links .links a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+  
+  .quick-links .links a:hover {
+    color: gold;
+  }
+  
+  .quick-links .share a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 2rem;
+  }
+ 
+  
